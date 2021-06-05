@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+.encabezado {
+  margin: 0;
+  height: 100px;
+  background-color: rgb(5, 4, 54); /* For browsers that do not support gradients */
+  background-image: linear-gradient(180deg, rgb(5, 4, 54), rgb(63, 118, 199));
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}

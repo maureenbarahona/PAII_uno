@@ -4,10 +4,6 @@
     <title>mail.com</title>
     <link rel="shortcut icon" href="./img/logo2.gif" />
     <link rel="stylesheet" href="./css/estilo.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
     <meta charset="utf-8" />
     <meta name="Descripcion" content="Sitio de tarea Avanzada II" />
     <meta name="Autor" content="Maureen Barahona" />
@@ -27,6 +23,58 @@
         
         <section>
           <div class="encabezadoSeccion">PERSONAL INFORMATION</div>
+          <form class="form1" action="">
+
+            <div class="formRowRadio">
+              <label for="gender">Gender *</label>
+              <input type="radio" id="male" name="gender" value="male">Male
+              <input type="radio" id="female" name="gender" value="female">Female 
+            </div>
+
+            <div class="formRow">
+              <label for="firstName">First Name *</label>
+              <input id="firstName" type="text" required>
+            </div>        
+                      
+            <div class="formRow">
+            <label for="lastName" >Last Name *</label>
+            <input id="lastName" type="text" required>
+            </div> 
+
+          <div class="formDate"> 
+            <label for="month">Date of Birth *</label>
+            <select class="select-css" id="month" name="month" required>
+              <option value='', disabled selected >Month:</option>
+              <option>January</option>
+              <option>February</option>
+              <option>March</option>
+              <option>April</option>
+              <option>May</option>
+              <option>June</option>
+              <option>July</option>
+              <option>August</option>
+              <option>September</option>
+              <option>October</option>
+              <option>November</option>
+              <option>December</option>
+            </select>/
+            <select class="select-css" id="day" name="day"  required>
+              <option value='', disabled selected >Day:</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select> /
+            <select class="select-css" id="day" name="day"  required>
+              <option value='', disabled selected >Year:</option>
+              <option value="1">1980</option>
+              <option value="2">1986</option>
+              <option value="3">1992</option>
+              <option value="4">1993</option>
+            </select>
+          </div>
+           
+          </form>
         </section>
         <section>
           <div class="encabezadoSeccion">CHECK AVAILABILITY</div>

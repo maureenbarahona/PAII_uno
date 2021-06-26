@@ -1,94 +1,250 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>mail.com</title>
-    <link rel="shortcut icon" href="./img/logo2.gif" />
-    <link rel="stylesheet" href="./css/estilo.css" />
-    <meta charset="utf-8" />
-    <meta name="Descripcion" content="Sitio de tarea Avanzada II" />
-    <meta name="Autor" content="Maureen Barahona" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header class="encabezado">
-      <img class="logo" src="./img/logo.png" />
-    </header>
-    <div class="bodyA">
-      <div class="bodyFormulario">
-        <header class="encabezadoFormulario">          
-          <div class="titleForm">Create your free Email Account </div>
-          
-          <img class="awardImage" src="./img/award.png">
-        </header>
-        
-        <section>
-          <div class="encabezadoSeccion">PERSONAL INFORMATION</div>
-          <form class="form1" action="">
 
-            <div class="formRowRadio">
-              <label for="gender">Gender *</label>
-              <input type="radio" id="male" name="gender" value="male">Male
-              <input type="radio" id="female" name="gender" value="female">Female 
+<head>
+  <title>mail.com</title>
+  <link rel="shortcut icon" href="./img/logo2.gif" />
+  <link rel="stylesheet" href="./css/estilo.css" />
+  <meta charset="utf-8" />
+  <meta name="Descripcion" content="Sitio de tarea Avanzada II" />
+  <meta name="Autor" content="Maureen Barahona" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header class="encabezado">
+    <img class="logo" src="./img/logo.png" />
+  </header>
+  <div class="bodyA">
+    <div class="bodyFormulario">
+      <header class="encabezadoFormulario">
+        <div class="titleForm">Create your free Email Account </div>
+
+        <img class="awardImage" src="./img/award.png">
+      </header>
+
+      <field>
+        <div class="encabezadoSeccion">PERSONAL INFORMATION</div>
+        <form class="form1" action="">
+
+          <div class="formRowRadio ">
+            <label for="gender">Gender *</label>
+            <input type="radio" id="male" name="gender" value="male">Male
+            <input type="radio" id="female" name="gender" value="female">Female
+          </div>
+
+          <div class="formRow">
+            <label for="firstName">First Name *</label>
+            <input id="firstName" type="text" required>
+          </div>
+
+          <div class="formRow">
+            <label for="lastName">Last Name *</label>
+            <input id="lastName" type="text" required>
+          </div>
+
+          <div class="formDate formRow">
+            <div class="formRow">
+              <label for="month">Date of Birth *</label>
+              <select class="select-css" id="month" name="month" required>
+                <option value='' , disabled selected>Month:</option>
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+              </select><span class="labelDetail">&nbsp; /&nbsp;</span>
+              <select class="select-css" id="day" name="day" required>
+                <option value='' , disabled selected>Day:</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select><span class="labelDetail">&nbsp; /&nbsp;</span>
+              <select class="select-css" id="year" name="day" required>
+                <option value='' , disabled selected>Year:</option>
+                <option value="1">1980</option>
+                <option value="2">1986</option>
+                <option value="3">1992</option>
+                <option value="4">1993</option>
+              </select>
+
+              <span class="labelDetail">(eg. May/23/1973)</span>
+            </div>
+          </div>
+
+          <div class="formRow">
+            <label>Country *</label>
+            <select class="select-css" id="country" name="country" required>
+              <option value="1">Honduras</option>
+              <option value="2">El Salvador</option>
+              <option value="3">Nicaragua</option>
+              <option value="4">CostaRica</option>
+            </select>
+          </div>
+        </form>
+
+      </field>
+      <field>
+        <div class="encabezadoSeccion">CHECK AVAILABILITY</div>
+        <form class="form1 ">
+          <div class="formRow">
+            <div class="formLabel"></div>
+            <div class=" labelDetail formField">Enter a contact email address different from your new
+              mail.com address. This and the security question helps you
+              recover your password in case you ever foget it.
+            </div>
+          </div>
+          <div class="formRow">
+            <label for="email">Desired Email Address *</label>
+            <input id="email" type="text" required>
+            <span class="Terms">&nbsp; @&nbsp; </span>
+            <select class="select-css" id="mailS" name="email" required>
+              <option value='' , disabled selected>mail.com</option>
+              <option value="1">gmail.com</option>
+              <option value="2">yahoo.com</option>
+            </select>
+          </div>
+
+          <div class="formRow">
+            <div class="formLabel"></div>
+            <button class="checkA">Check Availability</button>
+          </div>
+
+        </form>
+
+      </field>
+      <field>
+        <div class="encabezadoSeccion">DEFINE YOUR PASSWORD</div>
+        <form class="form1">
+          <div class="formRow">
+            <div class="formLabel"></div>
+            <div class=" labelDetail formField">Enter your desired email address here. If your choice is no
+              longer available, we will suggest a few alternatives based on
+              your first name, last name and birthday
+            </div>
+          </div>
+
+          <div class="formRow">
+
+            <div class="formRow">
+              <label for="ContactEmail">Contact Email</label>
+              <input id="ContactEmail" type="text" required>
             </div>
 
             <div class="formRow">
-              <label for="firstName">First Name *</label>
-              <input id="firstName" type="text" required>
-            </div>        
-                      
+              <label for="Secury Question">Security Question *</label>
+              <select class="select-css" id="SecQuest" name="SecQuest" required>
+                <option value='' , disabled selected>Choose One</option>
+                <option value="1">What is your mother day?</option>
+              </select>
+            </div>
+            <div class="formLabel"></div>
             <div class="formRow">
-            <label for="lastName" >Last Name *</label>
-            <input id="lastName" type="text" required>
-            </div> 
-
-          <div class="formDate"> 
-            <label for="month">Date of Birth *</label>
-            <select class="select-css" id="month" name="month" required>
-              <option value='', disabled selected >Month:</option>
-              <option>January</option>
-              <option>February</option>
-              <option>March</option>
-              <option>April</option>
-              <option>May</option>
-              <option>June</option>
-              <option>July</option>
-              <option>August</option>
-              <option>September</option>
-              <option>October</option>
-              <option>November</option>
-              <option>December</option>
-            </select>/
-            <select class="select-css" id="day" name="day"  required>
-              <option value='', disabled selected >Day:</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-            </select> /
-            <select class="select-css" id="day" name="day"  required>
-              <option value='', disabled selected >Year:</option>
-              <option value="1">1980</option>
-              <option value="2">1986</option>
-              <option value="3">1992</option>
-              <option value="4">1993</option>
-            </select>
+              <label for="youAnswer">Your Answer *</label>
+              <input id="youAnswer" type="text" required>
+            </div>
           </div>
-           
-          </form>
-        </section>
-        <section>
-          <div class="encabezadoSeccion">CHECK AVAILABILITY</div>
-        </section>
-        <section>
-          <div class="encabezadoSeccion">CHECK AVAILABILITY</div>
-        </section>
-        <section>
-          <div class="encabezadoSeccion">DEFINE YOUR PASSWORD</div>
-        </section>
-        <section>
-          <div class="encabezadoSeccion">VERIFY YOUR REGISTRATION</div>
-        </section>
+        </form>
+      </field>
+
+      <field>
+        <div class="encabezadoSeccion">VERIFY YOUR REGISTRATION</div>
+
+        <form class="form1">
+          <div class="formRow">
+            <div class="formLabel"></div>
+            <div class=" labelDetail formField">For security reasons please enter the code shown in the
+              picture below. This is to ensure that a person, not an
+              automated program, is creating this account.
+            </div>
+          </div>
+          <div class="formRow">
+            <div class="formLabel"></div>
+            <img class="caption" src="./img/caption.jpg">
+          </div>
+
+
+
+          <div class="formRow">
+            <div class="formLabel"></div>
+            <img class="formImage" src="./img/actualizar.jpg">
+            <div class="generate formField">
+              Generate a new Code
+            </div>
+          </div>
+
+          <div class="formRow">
+            <div class="formLabel"></div>
+            <img class="formImage" src="./img/sonido.jpg">
+            <div class="generate">
+              Generate an audio code
+            </div>
+          </div>
+
+          <div class="formRow">
+            <label for="showCode">Desired the code shown *</label>
+            <input id="showCode" type="text" required>
+
+          </div>
+
+
+          <div class="formRow">
+            <div class="formLabel"></div>
+            <div class=" labelDetail formField">* Fields required to complete registration.
+              The<span class="Terms"> Terms & Conditions</span> of mail.com apply. Please review
+              these and confim your acceptance.
+            </div>
+          </div>
+
+
+          <div class="formRow">
+            <div class="formLabel"></div>
+            <button class="buttonA">I Acept. Create My Account.</button>
+          </div>
+
+
+        </form>
+      </field>
     </div>
-  </body>
-  <footer></footer>
+
+  </div>
+  </div>
+  <footer class="finish">
+    <footer class="bodyFormulario ">
+      <img class="titleForm" src="img/logo2.gif">
+      <span class="titleForm"><br> &nbsp;&nbsp; &nbsp; 2013 1&1 Mail & Media Inc. All rights reserved.</span>
+      <div class="footer-links">
+
+        <section class="footer-section">
+          <ul class="listF">
+
+            <li>About mail.com</li>
+            <li>mail.com on Facebook</li>
+          </ul>
+        </section>
+        <section class="footer-section">
+          <ul class="listF">
+            <li>Terms & Conditions</li>
+            <li>Privacy Policy</li>
+            <li>Contact US</li>
+          </ul>
+        </section>
+      </div>
+    </footer>
+
+
+
+
+  </footer>
+</body>
+
+
 </html>
